@@ -1,5 +1,8 @@
 # Báo cáo lab 2D Perception
 
+- Sinh viên: Nguyễn Văn Xuân Lộc
+- MSSV: 2A202602870
+
 Link notebook đã chạy: https://github.com/xuanlocc2/Track04-Day18-2D-perception-detection-segmentation-keypoints/blob/main/lab_2d_perception_student.ipynb
 
 ## Kết quả bắt buộc
