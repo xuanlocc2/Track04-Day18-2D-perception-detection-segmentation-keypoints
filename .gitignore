@@ -16,3 +16,12 @@ __pycache__/
 .ipynb_checkpoints/
 .venv*/
 .DS_Store
+
+# Local validation and ONNX exports
+.review/
+.tmp_ultralytics/
+.tmp_validation/
+.tmp_onnx_test/
+*.onnx
+onnx_bonus/
+tiger-pose/

@@ -1,0 +1,61 @@
+{
+  "env": {
+    "python": "3.12.13",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "onnxruntime": "1.30.0",
+    "provider": "CPUExecutionProvider",
+    "threads": 2,
+    "warmup": 5,
+    "repeats": 30,
+    "imgsz": 640,
+    "precision": "FP32",
+    "iou": 0.7
+  },
+  "latency": [
+    {
+      "head": "one_to_many",
+      "conf": 0.25,
+      "preprocess (ms)": 8.984,
+      "inference (ms)": 132.509,
+      "postprocess (ms)": 11.732,
+      "pipeline (ms)": 153.225,
+      "pipeline p95 (ms)": 227.185,
+      "số box": 5,
+      "output shape": "(1, 84, 8400)"
+    },
+    {
+      "head": "one_to_many",
+      "conf": 0.001,
+      "preprocess (ms)": 4.828,
+      "inference (ms)": 87.187,
+      "postprocess (ms)": 6.569,
+      "pipeline (ms)": 98.584,
+      "pipeline p95 (ms)": 116.584,
+      "số box": 186,
+      "output shape": "(1, 84, 8400)"
+    },
+    {
+      "head": "one_to_one",
+      "conf": 0.25,
+      "preprocess (ms)": 4.108,
+      "inference (ms)": 75.357,
+      "postprocess (ms)": 0.381,
+      "pipeline (ms)": 79.846,
+      "pipeline p95 (ms)": 97.219,
+      "số box": 5,
+      "output shape": "(1, 300, 6)"
+    },
+    {
+      "head": "one_to_one",
+      "conf": 0.001,
+      "preprocess (ms)": 4.82,
+      "inference (ms)": 99.95,
+      "postprocess (ms)": 0.49,
+      "pipeline (ms)": 105.261,
+      "pipeline p95 (ms)": 186.043,
+      "số box": 177,
+      "output shape": "(1, 300, 6)"
+    }
+  ]
+}
